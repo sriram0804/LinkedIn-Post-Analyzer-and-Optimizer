@@ -1,0 +1,9 @@
+flask
+flask-cors
+textblob
+textstat
+keybert
+scikit-learn
+sentence-transformers
+openai
+python-dotenv
