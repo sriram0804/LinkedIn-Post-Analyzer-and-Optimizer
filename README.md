@@ -1,12 +1,80 @@
-# React + Vite
+# 📢 LinkedIn Post Analyzer & Optimizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack AI-powered web application that analyzes and optimizes your LinkedIn post drafts. Users can paste their content and receive:
 
-Currently, two official plugins are available:
+- ✅ **Sentiment analysis**
+- ✅ **Keyword extraction (NLP-based)**
+- ✅ **Readability scoring**
+- ✅ **GPT-powered rewriting suggestions** to boost post engagement
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> ✨ Built with React, Flask, and OpenAI GPT — demonstrates real-world marketing tech & AI integration.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- 📊 **Sentiment Score:** Analyze positivity/negativity of your post
+- 🧠 **Keyword Suggestions:** NLP-extracted core keywords
+- 📖 **Readability Score:** Evaluated via `textstat`
+- ✍️ **AI Rewrite Button:** Generates a more engaging version of your post using GPT
+- 💻 **Modern UI:** Built with React + Vite + TailwindCSS
+
+---
+
+## 🧰 Tech Stack
+
+| Frontend       | Backend        | ML/NLP | API/AI |
+|----------------|----------------|--------|--------|
+| React (Vite)   | Flask + Python | NLTK, TextBlob, TextStat, KeyBERT | OpenAI GPT-3.5 Turbo |
+
+---
+
+## 📁 Directory Structure
+
+linkedin-post-optimizer/
+├── backend/
+│ ├── app.py
+│ ├── .env # Contains your OpenAI API key
+│ ├── requirements.txt # Backend dependencies
+│ └── venv/ # Python virtual environment (Set your OPENAPI KEY here)
+└── frontend/
+├── src/
+│ ├── App.jsx
+│ ├── components/
+│ │ ├── InputCard.jsx
+│ │ ├── ResultCard.jsx
+│ │ └── RewriteCard.jsx
+│ └── index.css
+├── vite.config.js
+└── package.json
+
+## 🔒 Security Notes
+.env is excluded via .gitignore to protect your API key.
+
+CORS is enabled via flask-cors for development access.
+
+## 🧠 Models & Libraries Used
+TextBlob – for sentiment analysis
+
+KeyBERT – for keyword extraction
+
+TextStat – for readability
+
+OpenAI GPT – for content rewriting (via ChatGPT API)
+
+## 🙌 Acknowledgments
+OpenAI for GPT APIs
+
+KeyBERT & TextStat community
+
+React, Flask, Tailwind contributors
+
+## 💡 Future Improvements
+User authentication
+
+Post scheduling for LinkedIn
+
+Post performance prediction (engagement scoring)
+
+** Note to Create a .env file and paste your OPEN API Key "OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxx" **
+
